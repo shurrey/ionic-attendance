@@ -1,0 +1,35 @@
+page-attendance {
+
+	.user-container {
+		width: 240px;
+		height: 64px;
+		padding-top: 20px;
+		text-align: center;
+		border-radius: 12px;
+		display: inline-block;
+		margin-right: 16px;
+		margin-bottom: 15px;
+		cursor: pointer;
+		font-size: 16px;
+
+		img {
+			float: right;
+			margin-right: 12px;
+			border-radius: 20px;
+			margin-top: -6px;
+		}
+	}
+
+	.graded {
+		background-color: lightgreen;
+	}
+
+	.not-graded {
+		color: grey;
+		background-color: lightgrey;
+	}
+
+	.user-container:hover {
+		background-color: silver;
+	}
+}

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedCourse">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Attendance Records</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 text-center *ngIf="selectedCourse">
+    {{selectedCourse.title}}
+  </h3>
+  <div class="all-users"></div>
+</ion-content>

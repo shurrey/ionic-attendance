@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>This page allows you to configure apps settings.</p>
+  <form (ngSubmit)="saveForm()">
+      <ion-item>
+		<ion-label color="primary" floating>Blackboard Host</ion-label>
+        <ion-input type="text" [(ngModel)]="config.url" name="url"></ion-input>
+      </ion-item>
+	  <ion-item>
+		<ion-label color="primary" floating>Blackboard REST Client ID</ion-label>
+        <ion-input type="text" [(ngModel)]="config.client" name="client"></ion-input>
+      </ion-item>
+	  <ion-item>
+		<ion-label color="primary" floating>Blackboard REST Client Secret</ion-label>
+        <ion-input type="password" [(ngModel)]="config.secret" name="secret"></ion-input>
+      </ion-item>
+	  <ion-item>
+		<ion-label color="primary" floating>Blackboard User Name</ion-label>
+        <ion-input type="text" [(ngModel)]="config.user" name="user"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" block margin-vertical>Save Settings</button>
+  </form>
+
+</ion-content>
